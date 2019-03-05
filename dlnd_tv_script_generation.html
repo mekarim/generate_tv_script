@@ -12095,7 +12095,7 @@ george: yes, it was purple, i liked it, i dont actually recall considering the b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12600,10 +12600,10 @@ out = output[:, -1]</code></pre>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Data params</span>
 
 <span class="c1"># Sequence Length</span>
-<span class="n">sequence_length</span> <span class="o">=</span> <span class="mi">25</span> <span class="c1"># of words in a sequence</span>
+<span class="n">sequence_length</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1"># of words in a sequence</span>
 
 <span class="c1"># Batch Size</span>
-<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">512</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">128</span>
 
 <span class="c1"># Data loader - do not change</span>
 <span class="n">train_loader</span> <span class="o">=</span> <span class="n">batch_data</span><span class="p">(</span><span class="n">int_text</span><span class="p">,</span> <span class="n">sequence_length</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">)</span>
@@ -12650,7 +12650,7 @@ out = output[:, -1]</code></pre>
 <span class="n">embedding_dim</span> <span class="o">=</span> <span class="mi">200</span>
 
 <span class="c1"># Hidden Dimension</span>
-<span class="n">hidden_dim</span> <span class="o">=</span> <span class="mi">256</span>
+<span class="n">hidden_dim</span> <span class="o">=</span> <span class="mi">320</span>
 
 <span class="c1"># Number of RNN Layers</span>
 <span class="n">n_layers</span> <span class="o">=</span> <span class="mi">2</span>
@@ -12727,25 +12727,125 @@ out = output[:, -1]</code></pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Training for 10 epoch(s)...
-Epoch:    1/10    Loss: 5.900918919563294
+Epoch:    1/10    Loss: 5.852300101280212
 
-Epoch:    2/10    Loss: 5.05536646027242
+Epoch:    1/10    Loss: 5.146845384836197
 
-Epoch:    3/10    Loss: 4.73074083705994
+Epoch:    1/10    Loss: 5.080791616201401
 
-Epoch:    4/10    Loss: 4.554614712532297
+Epoch:    1/10    Loss: 4.925812218666077
 
-Epoch:    5/10    Loss: 4.432343306826122
+Epoch:    1/10    Loss: 4.763119410276413
 
-Epoch:    6/10    Loss: 4.342008173260432
+Epoch:    1/10    Loss: 4.812845164775848
 
-Epoch:    7/10    Loss: 4.270086982083239
+Epoch:    2/10    Loss: 4.666053842722885
 
-Epoch:    8/10    Loss: 4.211119666028378
+Epoch:    2/10    Loss: 4.4318013269901275
 
-Epoch:    9/10    Loss: 4.160377283320772
+Epoch:    2/10    Loss: 4.499398746728897
 
-Epoch:   10/10    Loss: 4.115804550020894
+Epoch:    2/10    Loss: 4.422641055822372
+
+Epoch:    2/10    Loss: 4.347034709692001
+
+Epoch:    2/10    Loss: 4.452517757177353
+
+Epoch:    3/10    Loss: 4.390142834162324
+
+Epoch:    3/10    Loss: 4.216358808755874
+
+Epoch:    3/10    Loss: 4.300007897853852
+
+Epoch:    3/10    Loss: 4.241013949871063
+
+Epoch:    3/10    Loss: 4.174426647901535
+
+Epoch:    3/10    Loss: 4.2894990105628965
+
+Epoch:    4/10    Loss: 4.242442130073299
+
+Epoch:    4/10    Loss: 4.087408419132233
+
+Epoch:    4/10    Loss: 4.18265366601944
+
+Epoch:    4/10    Loss: 4.131259886026382
+
+Epoch:    4/10    Loss: 4.064586712837219
+
+Epoch:    4/10    Loss: 4.190289275884628
+
+Epoch:    5/10    Loss: 4.142835021503573
+
+Epoch:    5/10    Loss: 3.9940757381916048
+
+Epoch:    5/10    Loss: 4.0955262317657475
+
+Epoch:    5/10    Loss: 4.045434596300125
+
+Epoch:    5/10    Loss: 3.9818784410953523
+
+Epoch:    5/10    Loss: 4.1126511759758
+
+Epoch:    6/10    Loss: 4.065159958552539
+
+Epoch:    6/10    Loss: 3.9225658681392668
+
+Epoch:    6/10    Loss: 4.024048870325088
+
+Epoch:    6/10    Loss: 3.9783557302951813
+
+Epoch:    6/10    Loss: 3.9164138786792755
+
+Epoch:    6/10    Loss: 4.052223117113114
+
+Epoch:    7/10    Loss: 4.0018571747270055
+
+Epoch:    7/10    Loss: 3.863534296274185
+
+Epoch:    7/10    Loss: 3.9698032598495483
+
+Epoch:    7/10    Loss: 3.9271795663833617
+
+Epoch:    7/10    Loss: 3.8627911558151244
+
+Epoch:    7/10    Loss: 4.0015407154560085
+
+Epoch:    8/10    Loss: 3.950657515869877
+
+Epoch:    8/10    Loss: 3.8163100774288177
+
+Epoch:    8/10    Loss: 3.9213958790302277
+
+Epoch:    8/10    Loss: 3.880904639482498
+
+Epoch:    8/10    Loss: 3.813684938669205
+
+Epoch:    8/10    Loss: 3.956563772201538
+
+Epoch:    9/10    Loss: 3.9086278593394814
+
+Epoch:    9/10    Loss: 3.777268187046051
+
+Epoch:    9/10    Loss: 3.877044269323349
+
+Epoch:    9/10    Loss: 3.8331468410491945
+
+Epoch:    9/10    Loss: 3.769319448232651
+
+Epoch:    9/10    Loss: 3.919934333086014
+
+Epoch:   10/10    Loss: 3.870473741515865
+
+Epoch:   10/10    Loss: 3.7384771132469177
+
+Epoch:   10/10    Loss: 3.8418974492549895
+
+Epoch:   10/10    Loss: 3.796987631559372
+
+Epoch:   10/10    Loss: 3.734679216146469
+
+Epoch:   10/10    Loss: 3.882983316898346
 
 Model Trained and Saved
 </pre>
@@ -12783,8 +12883,9 @@ Model Trained and Saved
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> (Write answer, here)</p>
 <ul>
-<li><p>Experiment 1:</p>
+<li><p><strong>Experiment 1:</strong></p>
 <ul>
+<li>final training Loss: 4.11 and going down</li>
 <li>sequence_length = 25. Randomly selected the sequence length of 25.</li>
 <li><p>batch_size = 512. The batch size was adjusted to suit the memory of my laptop.</p>
 </li>
@@ -12795,6 +12896,26 @@ Model Trained and Saved
 <li><p>embedding_dim = 200; the embedding is kept 200 based on the lecture on hyper-paramters, which said beyond 200 the results are not always significant.</p>
 </li>
 <li><p>hidden_dim = 256; the hidden dimension was set according to the lecture on hyper-paramters. Based on the example RNN Architectures we choose 256.</p>
+</li>
+<li><p>n_layers = 2; this was selected according to the Sentiment RNN lecture which advised: The network will have better performance with more layers; between 2-3.</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>Experiment 2:</strong></p>
+<ul>
+<li>final training loss: 3.88 and fluctuating (most likely need to dynamically adjust learning rate) </li>
+<li>sequence_length = 100. So that the generated sentences have long-term coherence.</li>
+<li><p>batch_size = 128. The batch size was adjusted to suit the memory of my laptop.</p>
+</li>
+<li><p>num_epochs = 10. The training error went down to 3.73.</p>
+</li>
+<li><p>learning_rate = 0.0001; this was intentionally kept low so that the algorithm converges and does not overshoot.</p>
+</li>
+<li><p>embedding_dim = 200; the embedding is kept 200 based on the lecture on hyper-paramters, which said beyond 200 the results are not always significant.</p>
+</li>
+<li><p>hidden_dim = 320; the hidden dimension was increased from 256 to 320.</p>
 </li>
 <li><p>n_layers = 2; this was selected according to the Sentiment RNN lecture which advised: The network will have better performance with more layers; between 2-3.</p>
 </li>
@@ -12817,7 +12938,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[92]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12848,7 +12969,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12856,7 +12977,7 @@ Model Trained and Saved
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="k">as</span> <span class="nn">F</span>
 
-<span class="k">def</span> <span class="err">(</span><span class="nf">rnn</span><span class="p">,</span> <span class="n">prime_id</span><span class="p">,</span> <span class="n">int_to_vocab</span><span class="p">,</span> <span class="n">token_dict</span><span class="p">,</span> <span class="n">pad_value</span><span class="p">,</span> <span class="n">predict_len</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">generate</span><span class="p">(</span><span class="n">rnn</span><span class="p">,</span> <span class="n">prime_id</span><span class="p">,</span> <span class="n">int_to_vocab</span><span class="p">,</span> <span class="n">token_dict</span><span class="p">,</span> <span class="n">pad_value</span><span class="p">,</span> <span class="n">predict_len</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Generate text using the neural network</span>
 <span class="sd">    :param decoder: The PyTorch Module that holds the trained neural network</span>
@@ -12927,28 +13048,6 @@ Model Trained and Saved
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-93-77a082a2efda&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">6</span>
-<span class="ansi-red-fg">    def (rnn, prime_id, int_to_vocab, token_dict, pad_value, predict_len=100):</span>
-        ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12968,7 +13067,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># run the cell multiple times to get different results!</span>
@@ -12997,71 +13096,73 @@ Model Trained and Saved
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>jerry:.
+<pre>jerry: you think you were gonna be in the middle of the car?
 
-jerry: hey, you don&#39;t think you can have the big thing?
+jerry: no.
 
-george: no, no.
+elaine: i don&#39;t know. it&#39;s not going to have it.
 
-george: oh, i&#39;m not gonna be a little.
+jerry: i can&#39;t believe i have a little.
 
-george: oh, no, i just think i had the way to go in the apartment and you know.
+jerry: what do you want it?
 
-george: well...
+kramer: i think you were going to be the same guy.
 
-george: hey, you got a little- of your way.
+george: you don&#39;t think that is a big problem?
 
-elaine: well, it&#39;s not a little.
+george: i don&#39;t know. you don&#39;t think that is a good time to be a little bit.
 
-jerry: what?
+hoyt: you have a good time.
 
-kramer: yeah...
+jerry: well, i&#39;m not going to see the other thing in the house, and i don&#39;t know what i could.
 
-george: i know, i think you know i don&#39;t have to get a big.
+hoyt: you can have a little good?
 
-george: oh.
+george: i don&#39;t want to know what i am.
 
-jerry: i got a lot of my apartment, i have a lot of my apartment.
+jerry: well, i don&#39;t even know if you have to go to a place.
 
-kramer: oh, no.
+elaine: what?
 
-george: hey, it&#39;s a second. you got the same of the apartment?
+george: i know.
 
-jerry: no, no, no- no. it&#39;s a little little.
+elaine: well, you can have a little.
 
-kramer: well, i don&#39;t want to be the other time.
+jerry: well, you know, i&#39;m gonna be in there.
 
-jerry:(leaving) hey, i don&#39;t think it, i have to go up.
+hoyt: so i could get the bathroom?
 
-george: well, i&#39;m a good time to do you.
+jerry: oh, you have no idea.
 
-elaine: oh, yeah, i&#39;m going on my car.
+hoyt: oh, i got to go in the bathroom.(he leaves)
 
-elaine: oh!
+jerry: hey, i think it&#39;s all about.
 
-jerry:(to elaine, jerry) : what?
+jerry: i think you know what happened to me.
 
-george: oh, yeah.
+elaine: what?
 
-jerry:(looking out the phone) i know, i can&#39;t be a lot of a lot of time.
+george: oh, no.
 
-jerry: oh.
+jerry: so you have an idiot, i think you were just a big friend.
 
-elaine:(pointing) well.
+kramer: you know what you think?
 
-jerry: i don&#39;t know.
+george: i thought you could have a little.(he starts to the door.)
 
-elaine: what?(to elaine) i think you know.
+hoyt: you know, the guy is not going to be.
 
-george: oh, no, it&#39;s no!
+hoyt: so, the guy is the first thing.
 
-jerry: what do you know, i don&#39;t know what you have a good.
+jerry: yeah.
 
-jerry: well, i have a lot of a big thing.
+jerry: so you can get out of your mind.
 
-kramer: i think we don&#39;t want to get out of the other.
+jerry: i don&#39;t think you know.
 
-elaine:(leaving) i think you know what we do, and they don&#39;t have a lot of
+elaine: oh, that&#39;s a great idea.
+
+elaine: oh...(to jerry to
 </pre>
 </div>
 </div>
@@ -13081,7 +13182,7 @@ elaine:(leaving) i think you know what we do, and they don&#39;t have a lot of
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># save script to a text file</span>
